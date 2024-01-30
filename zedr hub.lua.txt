@@ -6782,6 +6782,7 @@ Tabs.Shop:AddButton({
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 --misc
+    Title = "hihihi"
 Tabs.Misc:AddButton({
 	Title = "click để lấy link fb",
 	Description = "facebook chính thức của admin hub",
