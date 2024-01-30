@@ -7305,8 +7305,8 @@ InterfaceManager:SetFolder("FaiFaoScriptHub")
 SaveManager:SetFolder("FaiFaoScriptHub/specific-game")
 Window:SelectTab(1)
 Fluent:Notify({
-    Title = "Fai Fao Hub",
-    Content = "The script has been loaded.",
+    Title = "zedr Hub",
+    Content = "script đang được mở.",
     Duration = 8
 })
 SaveManager:LoadAutoloadConfig()
