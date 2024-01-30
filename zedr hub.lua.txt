@@ -6778,7 +6778,7 @@ Tabs.Shop:AddButton({
 --misc
 Tabs.Misc:AddButton({
 	Title = "click để lấy link fb",
-	Description = "",
+	Description = "facebook chính thức của admin hub",
 	Callback = function()
  setclipboard("https://www.facebook.com/61551675837476")
  Fluent:Notify({
