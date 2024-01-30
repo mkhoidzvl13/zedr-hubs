@@ -3260,7 +3260,7 @@ end)
 
 local ToggleCake = Tabs.Main:AddToggle("ToggleCake", {
     Title = "Auto Cake Prince",
-    Description = "Cày Tư Lệnh Bột", 
+    Description = "Cày katakuri", 
     Default = false })
 ToggleCake:OnChanged(function(Value)
  _G.CakePrince = Value
@@ -3325,7 +3325,7 @@ spawn(function()
 
     local ToggleSpawnCake = Tabs.Main:AddToggle("ToggleSpawnCake", {
         Title = "Auto Spawn Cake Prince",
-        Description = "Tự Động Triệu Hồi Tư lệnh Bột", 
+        Description = "Tự Động Triệu Hồi katakuri", 
         Default = true })
     ToggleSpawnCake:OnChanged(function(Value)
       _G.SpawnCakePrince = Value
