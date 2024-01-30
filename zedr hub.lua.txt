@@ -7313,8 +7313,8 @@ InterfaceManager:SetFolder("ZedrScriptHub")
 SaveManager:SetFolder("ZedrScriptHub/specific-game")
 Window:SelectTab(1)
 Fluent:Notify({
-    Title = "zedr Hub",
-    Content = "script đang được mở.",
+    Title = "anh iu bích ngọc",
+    Content = "script đang được khởi động.",
     Duration = 8
 })
 SaveManager:LoadAutoloadConfig()
