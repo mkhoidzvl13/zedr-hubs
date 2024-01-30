@@ -6781,7 +6781,10 @@ Tabs.Misc:AddButton({
 	Description = "",
 	Callback = function()
  setclipboard("https://www.facebook.com/61551675837476")
-  DiscordLib:Notification("Thông Báo" , "Đã Sao Chép Link Facebook" , 10 ,11816162894 )
+ Fluent:Notify({
+    Title = "zedr Hub",
+    Content = "đã sao chép link fb.",
+    Duration = 8
 	end
 
 })
