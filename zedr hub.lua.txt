@@ -28,7 +28,6 @@ local Tabs = {
     Shop = Window:AddTab({ Title = "Shop", Icon = "shopping-cart" }),
 	Misc = Window:AddTab({ Title = "Misc", Icon = "list-plus" }),
     Hop = Window:AddTab({ Title = "Hop", Icon = "user" }),
-    sever = Window:AddTab({ Title = "sever", Icon = "tag" }),
 }
 local Options = Fluent.Options
 do
@@ -7314,27 +7313,6 @@ spawn(function()
     end
 end)
 end
-----------------------------------------------------------------------------------------------------------------------------------------------
---sever
-Main:Seperator(" Server ")
-
-Time = Main:Label("Executer Time")
-
-function UpdateTime()
-local GameTime = math.floor(workspace.DistributedGameTime+0.5)
-local Hour = math.floor(GameTime/(60^2))%24
-local Minute = math.floor(GameTime/(60^1))%60
-local Second = math.floor(GameTime/(60^0))%60
-Time:Set("[Sever Đã Treo] : Giờ : "..Hour.. "  Phút : "..Minute.."  Giây : "..Second)
-end
-
-spawn(function()
- while task.wait() do
- pcall(function()
-  UpdateTime()
-  end)
- end
- end)
 ----------------------------------------------------------------------------------------------------------------------------------------------
 InterfaceManager:SetFolder("ZedrScriptHub")
 SaveManager:SetFolder("ZedrScriptHub/specific-game")
