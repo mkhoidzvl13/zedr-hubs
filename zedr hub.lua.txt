@@ -9,7 +9,7 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Window = Fluent:CreateWindow({
     Title = "bich ngoc beos hubs",
-    SubTitle = "20-10-2009_14-9-2009",
+    SubTitle = "14-9-2009",
     TabWidth = 160,
     Size = UDim2.fromOffset(530, 350),
     Acrylic = true,
