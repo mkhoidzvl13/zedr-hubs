@@ -7240,6 +7240,19 @@ function NoFog()
         end
     end
 end
+    Misc:Toggle("Tự Động Bật Tộc v3",_G.AutoAgility,function(value)
+        _G.AutoAgility = value
+    end)
+    
+    spawn(function()
+        pcall(function()
+            while wait() do
+                if _G.AutoAgility then
+                    game:GetService("ReplicatedStorage").Remotes.CommE:FireServer("ActivateAbility")
+                end
+            end
+        end)
+    end)
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Hop
