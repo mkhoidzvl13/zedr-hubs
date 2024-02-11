@@ -17,8 +17,8 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "home" }),
-    Setting = Window:AddTab({ Title = "Setting", Icon = "settings" }),
+    Main = Window:AddTab({ Title = "Main", Image = "http://www.roblox.com/asset/?id=16322146828" }),
+    Setting = Window:AddTab({ Title = "Setting", Image = "http://www.roblox.com/asset/?id=16322146828" }),
     Stats = Window:AddTab({ Title = "Stats", Icon = "plus-circle" }),
     Player = Window:AddTab({ Title = "Player", Icon = "box" }),
     Teleport = Window:AddTab({ Title = "Island", Icon = "palmtree" }),
