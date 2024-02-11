@@ -7240,7 +7240,18 @@ function NoFog()
         end
     end
 end
-
+--on v4
+spawn(function()
+while wait() do
+    pcall(function()
+        if AutoFarmAcient then
+            game:GetService("VirtualInputManager"):SendKeyEvent(true,"Y",false,game)
+            wait(0.1)
+            game:GetService("VirtualInputManager"):SendKeyEvent(false,"Y",false,game)
+        end
+    end)
+end
+end)
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Hop
 
