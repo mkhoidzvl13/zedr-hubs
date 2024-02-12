@@ -9,11 +9,11 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Window = Fluent:CreateWindow({
     Title = "Grayx hub",
-    SubTitle = "update",
+    SubTitle = "version 1.0",
     TabWidth = 160,
     Size = UDim2.fromOffset(530, 350),
     Acrylic = true,
-    Theme = "Dark",
+    Theme = "Blue",
     MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
