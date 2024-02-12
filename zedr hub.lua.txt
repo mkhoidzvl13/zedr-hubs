@@ -3645,9 +3645,9 @@ end)
 end
 
 if Third_Sea then
-    local RoughSea = Tabs.Main:AddSection("Rough Sea")
+    local RoughSea = Tabs.Main:AddSection("Rough Sea wait update")
 
-    local ToggleSailBoat = Tabs.Main:AddToggle("ToggleSailBoat", {Title = "Auto buy Boat",Description = "Mua Thuyền + Ngồi Vào", Default = false })
+    local ToggleSailBoat = Tabs.Main:AddToggle("ToggleSailBoat", {Title = "Auto buy Boat",Description = "wait update", Default = false })
     ToggleSailBoat:OnChanged(function(Value)
         _G.SailBoat = Value
     end)
@@ -3708,7 +3708,7 @@ if Third_Sea then
 	end)
 	
 
-    local ToggleTerrorshark = Tabs.Main:AddToggle("ToggleTerrorshark", {Title = " Kill Terrorshark",Description = "Đánh Terrorshark", Default = false })
+    local ToggleTerrorshark = Tabs.Main:AddToggle("ToggleTerrorshark", {Title = " Kill Terrorshark",Description = "wait update", Default = false })
 
     ToggleTerrorshark:OnChanged(function(Value)
         _G.AutoTerrorshark = Value
@@ -3749,7 +3749,7 @@ if Third_Sea then
 
 
 
-     local TogglePiranha = Tabs.Main:AddToggle("TogglePiranha", {Title = " Kill Piranha",Description = "Đánh Piranha", Default = false })
+     local TogglePiranha = Tabs.Main:AddToggle("TogglePiranha", {Title = " Kill Piranha",Description = "wait update", Default = false })
 
      TogglePiranha:OnChanged(function(Value)
         _G.farmpiranya = Value
@@ -3791,7 +3791,7 @@ if Third_Sea then
 
 
 
-     local ToggleShark = Tabs.Main:AddToggle("ToggleShark", {Title = " Kill Shark",Description = "Đánh Cá", Default = false })
+     local ToggleShark = Tabs.Main:AddToggle("ToggleShark", {Title = " Kill Shark",Description = "wait update", Default = false })
      ToggleShark:OnChanged(function(Value)
         _G.AutoShark = Value
      end)
@@ -3878,7 +3878,7 @@ if Third_Sea then
 
 
 
-    local ToggleShip = Tabs.Main:AddToggle("ToggleShip", {Title = "Kill Ship",Description = "Đánh Thuyền Hải Tặc", Default = false })
+    local ToggleShip = Tabs.Main:AddToggle("ToggleShip", {Title = "Kill Ship",Description = "wait update", Default = false })
     ToggleShip:OnChanged(function(Value)
         _G.Ship = Value
        end)
@@ -3918,7 +3918,7 @@ end)
 
 
 
-    local ToggleGhostShip = Tabs.Main:AddToggle("ToggleGhostShip", {Title = "Kill Ghost Ship",Description = "Đánh Thuyền Ma",Default = false })
+    local ToggleGhostShip = Tabs.Main:AddToggle("ToggleGhostShip", {Title = "Kill Ghost Ship",Description = "wait update",Default = false })
     ToggleGhostShip:OnChanged(function(Value)
         _G.GhostShip = Value
        end)
