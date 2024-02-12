@@ -7318,7 +7318,7 @@ InterfaceManager:SetFolder("ZedrScriptHub")
 SaveManager:SetFolder("ZedrScriptHub/specific-game")
 Window:SelectTab(1)
 Fluent:Notify({
-    Title = "anh iu bích ngọc",
+    Title = "developer moi bi ny ctay",
     Content = "script được tạo bởi Nguyễn Minh Khôi.",
     Duration = 8
 })
