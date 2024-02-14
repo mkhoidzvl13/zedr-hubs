@@ -2372,8 +2372,8 @@ local plr = game.Players.LocalPlayer
 
 
 --Attack Mastery
-    function FastAttack()
-        if not _GFastAttack then
+    function NormalAttack()
+        if not _G.NormalAttack then
             local Module = require(game.Players.LocalPlayer.PlayerScripts.CombatFramework)
             local CombatFramework = debug.getupvalues(Module)[2]
             local CamShake = require(game.ReplicatedStorage.Util.CameraShaker)
@@ -3684,7 +3684,7 @@ if Third_Sea then
                                             elseif (CFrame.new(-37952.49609375, 10.96342945098877, -1324.12109375).Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= 10 then
                                                 TweenShip(CFrame.new(-33163.1875, 10.964323997497559, -324.4842224121094))
                                             end 
-                                        until game:GetService("Workspace").Enemies:FindFirstChild("Shark") or game:GetService("Workspace").Enemies:FindFirstChild("Terrorshark") or game:GetService("Workspace").Enemies:FindFirstChild("Piranha") or game:GetService("Workspace").Enemies:FindFirstChild("Fish Crew Member") or _G.SailBoat == true
+                                        until game:GetService("Workspace").Enemies:FindFirstChild("Shark") or game:GetService("Workspace").Enemies:FindFirstChild("Terrorshark") or game:GetService("Workspace").Enemies:FindFirstChild("Piranha") or game:GetService("Workspace").Enemies:FindFirstChild("Fish Crew Member") or _G.SailBoat == false
                                     end
                                 end
                             end
