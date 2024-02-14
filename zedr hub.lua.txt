@@ -2372,8 +2372,8 @@ local plr = game.Players.LocalPlayer
 
 
 --Attack Mastery
-    function NormalAttack()
-        if not _G.NormalAttack then
+    function FastAttack()
+        if not _GFastAttack then
             local Module = require(game.Players.LocalPlayer.PlayerScripts.CombatFramework)
             local CombatFramework = debug.getupvalues(Module)[2]
             local CamShake = require(game.ReplicatedStorage.Util.CameraShaker)
