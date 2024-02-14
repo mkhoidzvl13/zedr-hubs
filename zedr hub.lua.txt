@@ -3791,12 +3791,11 @@ if Third_Sea then
 
 
 
-     local ToggleShark = Tabs.Main:AddToggle("ToggleShark", {Title = " Kill Shark",Description = "wait update", Default = false })
-     ToggleShark:OnChanged(function(Value)
+    ToggleShark:OnChanged(function(Value)
         _G.AutoShark = Value
-     end)
-     Options.ToggleShark:SetValue(false)
-     spawn(function()
+    end)
+    Options.ToggleShark:SetValue(false)
+    spawn(function()
         while wait() do
             if _G.AutoShark then
                 pcall(function()
@@ -3812,15 +3811,14 @@ if Third_Sea then
                                         v.Humanoid.WalkSpeed = 0
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
                                         Tween(v.HumanoidRootPart.CFrame * CFrame.new(posX,posY,posZ))
-                                        game.Players.LocalPlayer.Character.Humanoid.Sit = false
-                                    until not _G.AutoShark or not v.Parent or v.Humanoid.Health <= 0
+                                    until not _G.Shark or not v.Parent or v.Humanoid.Health <= 0
                                 end
                             end
                         end
                     else
-                        Tween(game:GetService("Workspace").Boats.PirateGrandBrigade.VehicleSeat.CFrame * CFrame.new(0,1,0))
-                        if game:GetService("ReplicatedStorage"):FindFirstChild("Terrorshark") then
-                            Tween(game:GetService("ReplicatedStorage"):FindFirstChild("Terrorshark").HumanoidRootPart.CFrame * CFrame.new(2,20,2))
+                      
+                        if game:GetService("ReplicatedStorage"):FindFirstChild("Shark") then
+                            Tween(game:GetService("ReplicatedStorage"):FindFirstChild("Shark").HumanoidRootPart.CFrame * CFrame.new(2,20,2))
                         else
                         end
                     end
@@ -3828,8 +3826,7 @@ if Third_Sea then
     
             end
         end
-    end)
-
+     end)
 
 
     local ToggleFishCrew = Tabs.Main:AddToggle("ToggleFishCrew", {Title = " Kill Fish Crew",Description = "Đánh Fish Crew", Default = false })
