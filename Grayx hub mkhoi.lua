@@ -4396,6 +4396,7 @@ spawn(function()
         end
     end
 end)
+	
 local SailBoatNguVcl = Tabs.Main:AddToggle("SailBoatNguVcl", {Title = "Auto Sail Boat",Description = "", Default = false })
 ToggleMirage:OnChanged(function(vSailBoatm)
     SailBoatm = vSailBoatm
