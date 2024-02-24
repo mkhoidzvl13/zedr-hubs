@@ -1,5 +1,5 @@
 --[[
-Cảm Ơn Bạn Đã Sử Dụng Dịch Vụ của Minh Khôi, Chúc Bạn Có 1 Trải Nghiệm Vui Vẻ. --fix 70359
+Cảm Ơn Bạn Đã Sử Dụng Dịch Vụ của Minh Khôi, Chúc Bạn Có 1 Trải Nghiệm Vui Vẻ. --fix 70360
 Mkhoi 20-10-2009_14-9-2009
 ]]--
 ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -3963,19 +3963,11 @@ if Third_Sea then
         _G.SailBoat = Value
     end)
     Options.ToggleSailBoat:SetValue(false)
-    shipngu = {"PirateBrigade", "PirateGrandBrigade"}
-    function occacship()
-        for _,cc in pairs(game.Workspace.Enemies:GetChildren()) do
-            if table.find(shipngu, cc.Name) then
-                return cc
-            end
-        end
-    end
     spawn(function()
         while task.wait() do
             pcall(function()
                 if _G.SailBoat then
-                    if not game.Workspace.SeaBeasts:FindFirstChild("SeaBeast1") or not occacship() or not game:GetService("Workspace").Enemies:FindFirstChild("Shark") or not game:GetService("Workspace").Enemies:FindFirstChild("Terrorshark") or not game:GetService("Workspace").Enemies:FindFirstChild("Piranha") or not game:GetService("Workspace").Enemies:FindFirstChild("Fish Crew Member") then
+                    if not game.Workspace.SeaBeasts:FindFirstChild("SeaBeast1") or (not game.Workspace.Enemies:FindFirstChild("PirateBrigade") and not game.Workspace.Enemies:FindFirstChild("PirateGrandBrigade")) or not game:GetService("Workspace").Enemies:FindFirstChild("Shark") or not game:GetService("Workspace").Enemies:FindFirstChild("Terrorshark") or not game:GetService("Workspace").Enemies:FindFirstChild("Piranha") or not game:GetService("Workspace").Enemies:FindFirstChild("Fish Crew Member") then
                         if not game:GetService("Workspace").Boats:FindFirstChild("PirateGrandBrigade") then
                             buyb = TweenBoat(CFrame.new(-16927.451171875, 9.0863618850708, 433.8642883300781))
                             if (CFrame.new(-16927.451171875, 9.0863618850708, 433.8642883300781).Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude <= 10 then
