@@ -1,5 +1,5 @@
 --[[
-Cảm Ơn Bạn Đã Sử Dụng Dịch Vụ của Minh Khôi, Chúc Bạn Có 1 Trải Nghiệm Vui Vẻ. --fix 7035
+Cảm Ơn Bạn Đã Sử Dụng Dịch Vụ của Minh Khôi, Chúc Bạn Có 1 Trải Nghiệm Vui Vẻ. --fix 70359
 Mkhoi 20-10-2009_14-9-2009
 ]]--
 ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -4022,38 +4022,73 @@ ToggleSeaBeAst:OnChanged(function(Value)
     end)
     Options.ToggleSeaBeAst:SetValue(false)
  
-    
-    Skillz = true
-    Skillx = true
-    Skillc = true
-    Skillv = true
-    
     spawn(function()
-        while wait() do
-            pcall(function()
-                if AutoSkill then
-                    if Skillz then
-                        game:service('VirtualInputManager'):SendKeyEvent(true, "Z", false, game)
-                        wait(.1)
-                        game:service('VirtualInputManager'):SendKeyEvent(false, "Z", false, game)
-                    end
-                    if Skillx then
-                        game:service('VirtualInputManager'):SendKeyEvent(true, "X", false, game)
-                        wait(.1)
-                        game:service('VirtualInputManager'):SendKeyEvent(false, "X", false, game)
-                    end
-                    if Skillc then
-                        game:service('VirtualInputManager'):SendKeyEvent(true, "C", false, game)
-                        wait(.1)
-                        game:service('VirtualInputManager'):SendKeyEvent(false, "C", false, game)
-                    end
-                    if Skillv then
-                        game:service('VirtualInputManager'):SendKeyEvent(true, "V", false, game)
-                        wait(.1)
-                        game:service('VirtualInputManager'):SendKeyEvent(false, "V", false, game)
+        while task.wait() do
+            if AutoSkill then
+                for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+                    if v:IsA("Tool") then
+                        if v.ToolTip == "Melee" then -- "Blox Fruit" , "Sword" , "Wear" , "Agility"
+                            game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+                        end
                     end
                 end
-            end)
+                game:GetService("VirtualInputManager"):SendKeyEvent(true,122,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                game:GetService("VirtualInputManager"):SendKeyEvent(false,122,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                wait(.2)
+                game:GetService("VirtualInputManager"):SendKeyEvent(true,120,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                game:GetService("VirtualInputManager"):SendKeyEvent(false,120,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                wait(.2)
+                game:GetService("VirtualInputManager"):SendKeyEvent(true,99,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                game:GetService("VirtualInputManager"):SendKeyEvent(false,99,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+                    if v:IsA("Tool") then
+                        if v.ToolTip == "Blox Fruit" then -- "Blox Fruit" , "Sword" , "Wear" , "Agility"
+                            game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+                        end
+                    end
+                end
+                game:GetService("VirtualInputManager"):SendKeyEvent(true,122,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                game:GetService("VirtualInputManager"):SendKeyEvent(false,122,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                wait(.2)
+                game:GetService("VirtualInputManager"):SendKeyEvent(true,120,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                game:GetService("VirtualInputManager"):SendKeyEvent(false,120,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                wait(.2)
+                game:GetService("VirtualInputManager"):SendKeyEvent(true,99,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                game:GetService("VirtualInputManager"):SendKeyEvent(false,99,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+        
+                wait(0.5)
+                for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+                    if v:IsA("Tool") then
+                        if v.ToolTip == "Sword" then -- "Blox Fruit" , "Sword" , "Wear" , "Agility"
+                            game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+                        end
+                    end
+                end
+                game:GetService("VirtualInputManager"):SendKeyEvent(true,122,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                game:GetService("VirtualInputManager"):SendKeyEvent(false,122,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                wait(.2)
+                game:GetService("VirtualInputManager"):SendKeyEvent(true,120,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                game:GetService("VirtualInputManager"):SendKeyEvent(false,120,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                wait(.2)
+                game:GetService("VirtualInputManager"):SendKeyEvent(true,99,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                game:GetService("VirtualInputManager"):SendKeyEvent(false,99,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                wait(0.5)
+                for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+                    if v:IsA("Tool") then
+                        if v.ToolTip == "Gun" then -- "Blox Fruit" , "Sword" , "Wear" , "Agility"
+                            game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+                        end
+                    end
+                end
+                game:GetService("VirtualInputManager"):SendKeyEvent(true,122,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                game:GetService("VirtualInputManager"):SendKeyEvent(false,122,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                wait(.2)
+                game:GetService("VirtualInputManager"):SendKeyEvent(true,120,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                game:GetService("VirtualInputManager"):SendKeyEvent(false,120,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                wait(.2)
+                game:GetService("VirtualInputManager"):SendKeyEvent(true,99,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+                game:GetService("VirtualInputManager"):SendKeyEvent(false,99,false,game.Players.LocalPlayer.Character.HumanoidRootPart)
+            end    
         end
     end)
     task.spawn(function()
