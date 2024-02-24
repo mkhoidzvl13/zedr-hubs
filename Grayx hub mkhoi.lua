@@ -40,7 +40,7 @@ if id == 2753915549 then First_Sea = true; elseif id == 4442272183 then Second_S
 --Flag Player
 Tabs.Main:AddButton({
     Title = "Check Boat",
-    Description = "Check Đi Địt Mẹ Mày",
+    Description = "check boat",
     Callback = function()
         if checkboat() then
             Fluent:Notify({
@@ -3957,7 +3957,7 @@ end
 
 if Third_Sea then
 
-    local ToggleSailBoat = Tabs.SeaETab:AddToggle("ToggleSailBoat", {Title = "Auto Sail Boat To Zone 6",Description = "wait update", Default = false })
+    local ToggleSailBoat = Tabs.SeaETab:AddToggle("ToggleSailBoat", {Title = "Auto Sail Boat To Zone 6",Description = "auto Zone 6", Default = false })
     ToggleSailBoat:OnChanged(function(Value)
         _G.SailBoat = Value
     end)
