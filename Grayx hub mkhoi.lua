@@ -9,7 +9,7 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Window = Fluent:CreateWindow({
     Title = "Grayx hub",
-    SubTitle = "Developer: Memories",
+    SubTitle = "Developer: Mkhoi",
     TabWidth = 160,
     Size = UDim2.fromOffset(530, 350),
     Acrylic = true,
@@ -3956,7 +3956,6 @@ end)
 end
 
 if Third_Sea then
-    local RoughSea = Tabs.Main:AddSection("Rough Sea wait update")
 
     local ToggleSailBoat = Tabs.SeaETab:AddToggle("ToggleSailBoat", {Title = "Auto Sail Boat To Zone 6",Description = "wait update", Default = false })
     ToggleSailBoat:OnChanged(function(Value)
@@ -4228,7 +4227,7 @@ ToggleSeaBeAst:OnChanged(function(Value)
             end
         end
     end)
-    local ToggleFishCrew = Tabs.Main:AddToggle("ToggleFishCrew", {Title = "Auto Fish Ship + Crew Warrior",Description = "", Default = false })
+    local ToggleFishCrew = Tabs.SeaETab:AddToggle("ToggleFishCrew", {Title = "Auto Fish Ship + Crew Warrior",Description = "", Default = false })
     ToggleFishCrew:OnChanged(function(Value)
        _G.AutoFishCrew = Value
     end)
